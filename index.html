@@ -3,115 +3,76 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login - XYZ Inc.</title>
-    <link rel="stylesheet" href="styles.css" />
+    <title>XYZ Inc. | Project Management Specialists</title>
+    <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <div class="login-container">
-      <h2>Login to XYZ Inc.</h2>
+    <!-- Header Section -->
+    <header class="nav-header">
+      <nav>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="dashboard.html">Dashboard</a></li>
+        </ul>
+      </nav>
+    </header>
 
-      <form action="login.php" method="POST" class="login-form">
-        <div class="input-group">
-          <label for="username">Username</label>
-          <input type="text" id="username" name="username" required />
+    <!-- Introduction Section -->
+    <div class="landing-page-container">
+      <section class="landing-pg">
+        <div>
+          <h1>
+            Accelerating Your Vision with Expert Project Management in SDLC,
+            Medical Tech, and Pharma.
+          </h1>
+          <p>
+            XYZ Inc. is a leader in project management solutions, specializing
+            in the SDLC, medical technology, and pharmaceutical industries.
+          </p>
         </div>
 
-        <div class="input-group">
-          <label for="password">Password</label>
-          <input type="password" id="password" name="password" required />
-        </div>
+        <!-- <img src="./images/landinpage.jpg" alt="" /> -->
+      </section>
 
-        <button type="submit" class="login-btn">Login</button>
-
-        <a href="#" class="forgot-password">Forgot Password?</a>
-      </form>
+      <!-- Mission and Vision Section -->
+      <section class="mission-vision-section">
+        <h2>Our Mission and Vision</h2>
+        <p>
+          Our mission is to deliver top-notch project management services that
+          drive innovation and efficiency.
+        </p>
+        <p>
+          We envision a world where projects in all industries are managed with
+          precision and expertise.
+        </p>
+        <button class="hire-us-btn">Get in touch</button>
+      </section>
     </div>
+
+    <!-- Service Banners Section -->
+    <section class="banner-section">
+      <div class="banner">
+        <img src="./images/ob1.jpg" alt="Project Management" />
+        <h3>Expert Project Management</h3>
+        <p>Delivering projects with expertise and dedication.</p>
+      </div>
+      <div class="banner">
+        <img src="./images/solution.jpg" alt="Innovative Solutions" />
+        <h3>Innovative Solutions</h3>
+        <p>Providing industry-leading solutions to complex challenges.</p>
+      </div>
+      <div class="banner">
+        <img src="./images/trus.jpg" alt="Trusted by Clients" />
+        <h3>Trusted by Leading Clients</h3>
+        <p>Building trust through successful partnerships and results.</p>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2024 XYZ Inc. All rights reserved.</p>
+    </footer>
   </body>
 </html>
-<style>
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-
-  body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-color: #f4f6f8;
-    font-family: Arial, sans-serif;
-  }
-
-  .login-container {
-    background: #ffffff;
-    padding: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-    max-width: 400px;
-    width: 100%;
-    text-align: center;
-  }
-
-  h2 {
-    color: #333;
-    margin-bottom: 1.5rem;
-  }
-
-  .login-form {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .input-group {
-    margin-bottom: 1rem;
-    text-align: left;
-  }
-
-  .input-group label {
-    color: #555;
-    margin-bottom: 0.5rem;
-    display: block;
-  }
-
-  .input-group input {
-    width: 100%;
-    padding: 0.8rem;
-    border-radius: 4px;
-    border: 1px solid #ccc;
-  }
-
-  .login-btn {
-    background-color: #3498db;
-    color: white;
-    padding: 0.8rem;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-weight: bold;
-    margin-top: 1rem;
-    transition: background-color 0.3s;
-  }
-
-  .login-btn:hover {
-    background-color: #2980b9;
-  }
-
-  .forgot-password {
-    margin-top: 1rem;
-    font-size: 0.9rem;
-    color: #3498db;
-    text-decoration: none;
-  }
-
-  .forgot-password:hover {
-    text-decoration: underline;
-  }
-
-  @media (max-width: 500px) {
-    .login-container {
-      padding: 1.5rem;
-    }
-  }
-</style>
