@@ -1,0 +1,143 @@
+/* Projects Page Styling */
+.projects-page {
+    font-family: "Lato", sans-serif;
+  padding: 20px;
+  background-color: #f4f6f8;
+}
+
+.projects-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.projects-header h1 {
+  font-size: 2.5rem;
+  color: #2c3e50;
+}
+
+.projects-header p {
+  font-size: 1.2rem;
+  color: #7f8c8d;
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 20px;
+}
+
+.projects-category h2 {
+  font-size: 1.8rem;
+  color: #34495e;
+  margin-bottom: 20px;
+}
+
+.project-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.project-card {
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+}
+
+.project-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.project-details {
+  padding: 15px;
+}
+
+.project-details h3 {
+  font-size: 1.6rem;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.status {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.ongoing {
+  color: #e67e22;
+}
+
+.completed {
+  color: #27ae60;
+}
+
+.project-description {
+  font-size: 1rem;
+  color: #7f8c8d;
+  margin-bottom: 15px;
+}
+
+.projects-banners {
+  margin-top: 40px;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.banner {
+  background-color: #2980b9;
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 0.3s ease;
+}
+
+.banner:hover {
+  background-color: #3498db;
+}
+
+.banner h2 {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+}
+
+.banner p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+.banner a {
+  color: #ecf0f1;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.banner a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .projects-banners {
+    flex-direction: column;
+  }
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}

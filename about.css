@@ -1,0 +1,282 @@
+/* General Reset */
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Lato", sans-serif;
+}
+.lato-light {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+.lato-regular {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #333;
+  padding: 1rem;
+  text-align: center;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+header nav ul li {
+  margin: 0 1rem;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Main Section Styling */
+.intro-section,
+.history-section,
+.team-section,
+.values-section {
+  padding: 2rem;
+  text-align: center;
+}
+
+.intro-section h1 {
+  font-size: clamp(1rem, 3vw, 2.5rem);
+  /* color: #333; */
+}
+
+.history-section h2,
+.team-section h2,
+.values-section h2 {
+  font-size: 1.8rem;
+  color: #444;
+}
+
+/* Team Members Section Styling */
+.team-members {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.team-member {
+  max-width: 200px;
+  text-align: center;
+}
+
+.team-member img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.team-member h3 {
+  margin-top: 1rem;
+}
+
+.team-member p {
+  color: #555;
+}
+
+/* Values List Styling */
+.values-section ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 1rem;
+}
+
+.values-section li {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+/* Banner Section Styling */
+.banner-section {
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem;
+  flex-wrap: wrap;
+}
+
+.banner {
+  text-align: center;
+  max-width: 300px;
+  margin: 1rem;
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.banner img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.banner h3 {
+  font-size: 1.2rem;
+  margin: 1rem 0 0.5rem;
+}
+
+.banner p {
+  font-size: 1rem;
+  color: #555;
+}
+.small-texts {
+  font-size: calc(0.6rem, 12px, 12rem);
+  font-weight: 300;
+}
+.hero-text {
+  font-size: 2rem;
+}
+.Aabout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.intro-section h1 {
+  width: 800px;
+  text-align: center;
+  place-items: center;
+}
+.about-and-history {
+  padding: 10px;
+}
+.about {
+  margin-bottom: 24px;
+}
+.about h1 {
+  font-size: clamp(1.2rem, 4vw, 2rem);
+}
+.about p {
+  font-size: 1.2rem;
+}
+
+/* team */
+.Teams {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  flex-direction: column;
+}
+.our-team {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.our-team .team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+  border-radius: 8px;
+  /* height: 300px; */
+  /* padding: 12px; */
+  margin: 12px;
+}
+.our-team .team:hover {
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2), -4px -4px 15px rgba(0, 0, 0, 0.3);
+  transition: 0.3s;
+}
+.our-team .team .img-container {
+  width: 100%;
+  /* box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2), -4px -4px 15px rgba(0, 0, 0, 0.3); */
+}
+.our-team .team .img-container img {
+  width: 100%;
+  border: 3px solid white;
+}
+
+.affirmation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.affirmation h1 {
+  text-align: center;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+  .banner-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .intro-section h1 {
+    width: 200px;
+    text-align: center;
+    place-items: center;
+  }
+  .banner {
+    max-width: 90%;
+  }
+
+  .team-members {
+    flex-direction: column;
+  }
+
+  .team-member {
+    max-width: 90%;
+  }
+}
+.about-and-history {
+  padding: 25px;
+  background-image: url("./images/beginnig.jpg");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media (max-width: 480px) {
+  header nav ul li {
+    margin: 0.5rem;
+  }
+
+  .history-section h2,
+  .team-section h2,
+  .values-section h2 {
+    font-size: 1.2rem;
+  }
+
+  footer {
+    font-size: 0.9rem;
+  }
+}
+@media (min-width: 1024px) {
+  .about-and-history {
+    padding: 88px;
+  }
+  .our-team {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+  }
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
