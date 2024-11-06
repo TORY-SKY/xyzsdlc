@@ -10,7 +10,7 @@
     <div class="login-container">
       <h2>Login to XYZ Inc.</h2>
 
-      <form action="login.php" method="POST" class="login-form">
+      <form method="POST" class="login-form">
         <div class="input-group">
           <label for="username">Username</label>
           <input type="text" id="username" name="username" required />
@@ -21,7 +21,7 @@
           <input type="password" id="password" name="password" required />
         </div>
 
-        <button type="submit" class="login-btn">Login</button>
+        <button class="login-btn" id="loginButton">Login</button>
 
         <a href="#" class="forgot-password">Forgot Password?</a>
       </form>
@@ -115,3 +115,13 @@
     }
   }
 </style>
+<script>
+  // Select the login button
+  const loginButton = document.getElementById("loginButton");
+
+  // Add a click event listener to the button
+  loginButton.addEventListener("click", () => {
+    // Redirect to the login page
+    window.location.href = "index.html";
+  });
+</script>
